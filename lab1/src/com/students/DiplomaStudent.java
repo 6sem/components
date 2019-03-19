@@ -6,9 +6,6 @@ import com.students.infra.StudentType;
 
 import java.util.UUID;
 
-@StudentType(
-        type = StudentTypes.Diploma
-)
 public class DiplomaStudent extends StudentBase {
 
     private static final StudentTypes DiplomaStudentType = StudentTypes.Diploma;

@@ -1,4 +1,5 @@
 import com.students.DiplomaStudent;
+import com.students.infra.StudentType;
 import com.students.tools.StudentProcessorImpl;
 
 import java.util.UUID;
@@ -26,5 +27,7 @@ public class Main {
         for(var methodAccessor : methodsAndAccessors.entrySet()) {
             System.out.println("\t" + methodAccessor.getValue() + "/" + methodAccessor.getKey());
         }
+
+        studentClassProcessor.invokeWithAnnotation(StudentType.class);
     }
 }

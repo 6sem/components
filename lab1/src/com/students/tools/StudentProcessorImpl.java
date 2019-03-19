@@ -1,7 +1,10 @@
 package com.students.tools;
 
 import com.students.abstractions.Student;
+import com.students.infra.StudentType;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.*;
 
@@ -52,5 +55,29 @@ public class StudentProcessorImpl implements StudentProcessor {
         }
 
         return list;
+    }
+
+    @Override
+    public void invokeWithAnnotation(Class target) {
+
+        if (!target.isAnnotation())
+            throw new IllegalArgumentException("target");
+
+        var cls = _student.getClass();
+
+        var methods = cls.getMethods();
+
+        for (var m : methods) {
+            if (m.isAnnotationPresent(target))
+                safeInvoke(_student, m);
+        }
+    }
+
+    private static void safeInvoke(Object cls, Method method) {
+        try {
+            method.invoke(cls, null);
+        } catch (Exception e) {
+            // ignore
+        }
     }
 }
