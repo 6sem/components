@@ -1,6 +1,6 @@
-package com.students.abstractions;
+package com.students.models.abstractions;
 
-import com.students.core.StudentTypes;
+import com.students.models.core.StudentTypes;
 
 import java.util.UUID;
 

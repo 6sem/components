@@ -1,4 +1,4 @@
-package com.students.abstractions;
+package com.students.models.abstractions;
 
 public abstract class EntityBase<TId> implements Entity<TId> {
     private TId _id;

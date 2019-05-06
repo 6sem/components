@@ -1,5 +1,5 @@
 import com.students.DiplomaStudent;
-import com.students.abstractions.Student;
+import com.students.models.abstractions.Student;
 import org.junit.jupiter.api.Test;
 
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.students.core;
+package com.students.models.core;
 
 public enum StudentTypes {
     Diploma,

@@ -1,7 +1,7 @@
 package com.students;
 
-import com.students.abstractions.StudentBase;
-import com.students.core.StudentTypes;
+import com.students.models.abstractions.StudentBase;
+import com.students.models.core.StudentTypes;
 import com.students.infra.StudentType;
 
 import java.util.UUID;

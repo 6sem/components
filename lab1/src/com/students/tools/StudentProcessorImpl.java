@@ -1,6 +1,6 @@
 package com.students.tools;
 
-import com.students.abstractions.Student;
+import com.students.models.abstractions.Student;
 import com.students.infra.StudentType;
 
 import java.lang.annotation.Annotation;

@@ -1,4 +1,4 @@
-package com.students.abstractions;
+package com.students.models.abstractions;
 
 public interface Student {
     String getName();

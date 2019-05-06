@@ -1,6 +1,6 @@
 package com.students.infra;
 
-import com.students.core.StudentTypes;
+import com.students.models.core.StudentTypes;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

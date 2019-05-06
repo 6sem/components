@@ -1,6 +1,6 @@
 import com.students.DiplomaStudent;
-import com.students.abstractions.Student;
-import com.students.abstractions.StudentBase;
+import com.students.models.abstractions.Student;
+import com.students.models.abstractions.StudentBase;
 import com.students.infra.StudentType;
 import com.students.tools.StudentProcessor;
 import com.students.tools.StudentProcessorImpl;
