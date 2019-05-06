@@ -1,0 +1,4 @@
+USE SHOP;
+
+GO
+CREATE SCHEMA sales
